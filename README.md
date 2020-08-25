@@ -1,4 +1,10 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Portfolio Website Using React
+
+- This is re-creation of a portfolio by [Adeola](https://twitter.com/adeolajs)
+- This app was made using react
+- The live site could be found [here](https://portfoliorecreationshubhamthedev.netlify.app/)
+
+![image showcase](./showcase.jpeg)
 
 ## Available Scripts
 

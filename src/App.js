@@ -1,26 +1,56 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Header from "./Components/Header";
+import Navbar from "./Components/Navbar";
+import Projects from "./Components/Projects";
+import Web from "./Components/Web";
+import "./sass/main.scss";
+import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
+class App extends Component {
+  // componentDidMount() {
+  //   var e = document.body,
+  //     t = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+  //     n = t.getBoundingClientRect().height - "100px",
+  //     a = 0.08,
+  //     o = 0;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  //   function r() {
+  //     let e = `translateY(-${(o +=
+  //       (window.pageYOffset - o) * a)}px) translateZ(0)`;
+  //     t.style.transform = e;
+  //     requestAnimationFrame(r);
+  //   }
+  //   e.style.height = Math.floor(n) + "px";
+  //   r();
+  //   var s = document.querySelector("section"),
+  //     l = window.pageYOffset,
+  //     i = function e() {
+  //       var t = window.pageYOffset,
+  //         n = 0.2 * (t - l);
+  //       s.style.transform = "skewY(" + n + "deg)";
+  //       l = t;
+  //       requestAnimationFrame(e);
+  //     };
+  //   i();
+  // }
+  render() {
+    return (
+      <>
+        <Navbar />
+        <div className="smooth-scroll-wrapper">
+          <section className="content">
+            <Header />
+            <main>
+              <Projects />
+              <Web />
+              <Contact />
+            </main>
+            <Footer />
+          </section>
+        </div>
+      </>
+    );
+  }
 }
 
 export default App;
